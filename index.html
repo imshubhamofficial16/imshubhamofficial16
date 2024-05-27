@@ -10,6 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/live-resume.css">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Shubham Sharma">
+    <meta property="og:description" content="Experienced Backend Developer specializing in Node.js and RESTful APIs.">
+    <meta property="og:image" content="assets/images/profile.jpg"> <!-- Ensure this image is accessible and has correct path -->
+    <meta property="og:url" content="https://imshubhamofficial16.github.io/imshubhamofficial16/"> <!-- Replace with your website URL -->
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Shubham Sharma">
+    <meta name="twitter:description" content="Experienced Backend Developer specializing in Node.js and RESTful APIs.">
+    <meta name="twitter:image" content="assets/images/profile.jpg"> <!-- Ensure this image is accessible and has correct path -->
+    <meta name="twitter:url" content="https://imshubhamofficial16.github.io/imshubhamofficial16/"> <!-- Replace with your website URL -->
+    
+    <!-- Other Meta Tags and Links -->
+    <link href="https://fonts.googleapis.com/css?family=Mukta:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/live-resume.css">
+
 </head>
 
 <body>
@@ -296,7 +316,7 @@
                     </div>
                     <div class="media service-card col-lg-6">
                         <div class="service-icon">
-                            <img src="assets/images/icon2.svg" alt="bulb">
+                            <img src="assets/images/js.svg" alt="bulb">
                         </div>
                         <div class="media-body">
                             <h5 class="service-title">JavaScript</h5>
@@ -378,8 +398,12 @@
                     </div>
                 </div>
             </section>
-            <footer>@ <a href="https://www.linkedin.com/in/skrishnatray/" target="_blank"
-                    rel="noopener noreferrer">ShubhamSharma</a>. All Rights Reserved 2020</footer>
+            <footer>@ <a href="https://www.linkedin.com/in/skrishnatray/" target="_blank" rel="noopener noreferrer">ShubhamSharma</a>. All Rights Reserved <span id="current-year"></span></footer>
+
+            <script>
+                document.getElementById('current-year').textContent = new Date().getFullYear();
+            </script>
+            
         </main>
     </div>
     <script src="assets/vendors/jquery/dist/jquery.min.js"></script>
